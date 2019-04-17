@@ -1,8 +1,11 @@
 package org.kc.solid;
 
+import java.util.Comparator;
+
 //single responsiblity principle
 // what is responsiblity of your class/component/microserves
-public class User {
+public class User implements Comparable<User>{
+//	public class User{
 	private int userId;
 	private String username;
 	private String city;
@@ -92,4 +95,26 @@ public class User {
 
 	}
 */
+
+	@Override
+	public int compareTo(User user) {
+		// if this object is smaller than object return -1
+		// if this object is grater than object return +1
+		// if this object and user is equale return 0
+	//	return (this.userId < user.userId)?-1:(this.userId > user.userId)? 1:0;
+		return Comparator.comparingInt(User::getUserId)
+						 .thenComparing(User::getUsername)
+						 .compare(this,user); 
+		//return Integer.compare(user.userId,this.userId); //asending order
+	//	return Integer.compare(user.userId,this.userId); // reverse order
+	}
+	
+
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", username=" + username + ", city="
+				+ city + "]";
+	}
+	
+	
 }

@@ -1,0 +1,45 @@
+1. what is String? 
+  String s1="ABC";
+  s1=s1.toLower();
+  sysout(s1);
+2. Exception? how to create custom checked and unchecked exception?
+3.
+public int demo(){
+    try{
+	1/0;
+
+      }catch(Exception e){
+	return 0;
+      }finally{
+	return 0;
+      }
+  }
+4.explain collection herarchy ?
+5. hashmap working?
+7. write code to add data to HashMap and how many ways there to iterate?
+6. insertion order in map releted impl?
+7. equals and hashcode method senario?
+9. HashSet and equals and hashcode method()?
+*. LinkedList and ArrayList difference?
+*. volatile keyword?
+*. final and finally()?
+*. Method overloding and overriding?
+*. Benifit of method overloding? 
+*
+10. TreeMap explain
+11.spring modules?
+12. spring ioc and dependencey injuction?
+13. how to define bean in xml?
+14. how to define dependency setter and constructor injection in xml?
+15. beanFactory? and springContext? difference?
+16. spring boot?
+17. why typescript?
+18. what is component?
+19. inbuild directive ng-for, ng-if, ng-swich
+20. how to create custom dierctive.
+21. angular router configurtaion?
+22. angular project structure and responsibility?
+23. angular service?
+24. angular cli command to create component? and service?
+25. angular working flow?
+26. project working flow? 
